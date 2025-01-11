@@ -1,0 +1,20 @@
+reviews:
+  path_instructions:
+    - path: "**/*.js"
+      instructions: |
+        JavaScriptファイルに対して以下の点をレビューしてください：
+        - パフォーマンスの最適化
+        - エラーハンドリング
+        - コードの可読性
+language: ja-JP
+system_message: |
+  あなたは経験豊富なソフトウェアエンジニアとして、以下の点に注目してコードをレビューしてください：
+  - ロジックの改善
+  - セキュリティの強化
+  - パフォーマンスの最適化
+  - エラーハンドリング
+  - コードの保守性
+on:
+  pull_request:
+    types:
+      - opened
