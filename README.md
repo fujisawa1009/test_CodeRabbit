@@ -18,3 +18,4 @@ https://platform.openai.com/docs/overview
 ②「+Create new secret key」をクリックします。
 ③「Create secret key」をクリックします。
 ④生成されたURLを、緑のボタンをクリックしてコピー
+
