@@ -1,6 +1,6 @@
 // イベント・フェアカレンダーアプリの情報を「お知らせ」欄に表示
 (function() {
-    'use strict';
+    'usesssssss strict';
 
     kintone.events.on('portal.show', function() {
 
