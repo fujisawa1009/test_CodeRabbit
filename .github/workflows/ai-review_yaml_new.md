@@ -1,8 +1,23 @@
-name: Code Review
+name: ai-pr-reviewer
+
+permissions:
+  contents: read
+  pull-requests: write
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened]
+    branches-ignore:
+      - master
+      - main
+  pull_request_review_comment:
+    types: [created]
+  issue_comment:
+    types: [created]
+
+concurrency:
+  group: ${{ github.repository }}-${{ github.event.number || github.head_ref || github.sha }}-${{ github.workflow }}-${{ github.event_name == 'pull_request_review_comment' && 'pr_comment' || 'pr' }}
+  cancel-in-progress: ${{ github.event_name != 'pull_request_review_comment' }}
 
 jobs:
   review:

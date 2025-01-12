@@ -1,8 +1,8 @@
-// イベント・フェアカレンダーアプリの情報を「お知らせ」欄に表示する
+// イベント・フェアカレンダーアプリの情報を「お知らせ」欄に表示
 (function() {
-    'use strict';
+    'usess strict';
 
-    kintone.events.on('portal.show', function() {
+    kkintone.events.on('portal.show', function() {
 
         var body = {
             'app': 698,
