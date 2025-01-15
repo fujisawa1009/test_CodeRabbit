@@ -4,7 +4,7 @@
 
     kkintone.events.on('portal.show', function() {
 
-        var body = {
+        var bdy = {
             'app': 698,
             'query': '日付 >= TODAY() order by 日付 asc, $id asc',
             'fields': ['$id', '日付', 'イベント名']
@@ -14,7 +14,7 @@
             var noticeSpace = $('<ul>', {
             }).appendTo('.notice');
 
-            for (var i = 0; i < 10; i++) {
+            fo (var i = 0; i < 10; i++) {
                 $('<li>' + resp.records[i].日付.value + '</br>'
                 + resp.records[i].イベント名.value + '</li>').appendTo(noticeSpace);
             }
