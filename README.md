@@ -1,9 +1,9 @@
 # test_CodeRabbit
 
 以下を作成
-/Users/fujisawa/Projects/TL/test_CodeRabbit/.github/workflows/ai-review.yaml
+TL/test_CodeRabbit/.github/workflows/ai-review.yaml
 カスタマイズ設定ファイルを直下に配置
-/Users/fujisawa/Projects/TL/test_CodeRabbit/.coderabbit.yaml
+TL/test_CodeRabbit/.coderabbit.yaml
 
 # GitHubのSecretsにOPENAI_API_KEYを設定
 「Settings」→「Secrets and variables」→「Actions」
